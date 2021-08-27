@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="./gameStyle.css">
+</head>
+<body>
+    <header class="game-mode-header">
+        <button class="back-button"  onclick="back()" id="backButton">back</button>
+        <button class="pause-button" onclick="pause()" id="pauseButton">||</button>
+    </header>
+    <h1 class="game-mode">Multiplayer</h1>
+    <section class="game-container">
+        <div class="score-board-container">
+            <div class="player-score-board">
+                <h3 class="score-title" id="p1-title">P1 Score</h3>
+                <p class="score" id="p1-score">0</p>
+            </div>
+            <div class="player-score-board">
+                <h3 class="score-title" id="p2-title">P2 Score</h3>
+                <p class="score" id="p2-score">0</p>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="player1" id="player1"></div>
+            <div class="ball" id="ball"></div>
+            <div class="field-mid-line"></div>
+            <div class="field-mid-circle"></div>
+            <div class="player2" id="player2"></div>
+        </div>
+    </section>
+    
+
+
+    <script src="./gameScript.js"></script>
+</body>
+</html>
